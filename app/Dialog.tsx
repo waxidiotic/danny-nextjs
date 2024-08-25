@@ -34,8 +34,10 @@ const Dialog = ({
           <Box sx={{ position: "relative", width: 330, height: 179 }}>
             <Image
               src="https://cloudinary-cdn.ffm.to/s--17oGWJxM--/f_jpg/https%3A%2F%2Fimagestore.ffm.to%2Flink%2F4a7ef3941213694024ca0557fb8dcddb.jpg"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{
+                objectFit: "cover",
+              }}
               alt="Image"
             />
           </Box>
@@ -73,8 +75,6 @@ const Dialog = ({
             </Stack>
           </Box>
         </DialogContent>
-        {/* <DialogActions>
-        </DialogActions> */}
       </MuiDialog>
     </>
   );
